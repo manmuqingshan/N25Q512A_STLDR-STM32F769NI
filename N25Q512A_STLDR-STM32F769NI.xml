@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE targetDefinitions [ 
+	<!ELEMENT targetDefinitions (board)>
+	<!ELEMENT board (name, dbgIF+, dbgDEV, mcuId)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT dbgIF (#PCDATA)>
+	<!ELEMENT dbgDEV (#PCDATA)>
+	<!ELEMENT mcuId (#PCDATA)>
+	<!ATTLIST board id CDATA #REQUIRED>
+]>
+
+<targetDefinitions>
+  <board id="n25q512a_stldr-stm32f769ni">
+    <name>N25Q512A_STLDR-STM32F769NI</name>
+    <dbgIF>SWD</dbgIF>
+    <dbgDEV>ST-Link</dbgDEV>
+    <mcuId>stm32f769nihx</mcuId>
+  </board>
+</targetDefinitions>
